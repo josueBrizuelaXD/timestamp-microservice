@@ -8,6 +8,6 @@ var server = http.createServer(function(req, res) {
 	res.end("hello");
 });
 
-server.listen(8000, "127.0.0.1", function() {
+server.listen(process.env.PORT || 8000, function() {
 	console.log("listening to port 8000");
 });
